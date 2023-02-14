@@ -1,17 +1,13 @@
+// Single workspace configuration
+
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+import {schemaTypes} from './schemas/schemas'
 
 export default defineConfig({
-  name: 'default',
-  title: 'fullstack-portfolio',
-
   projectId: 'xg109h56',
   dataset: 'production',
-
-  plugins: [deskTool(), visionTool()],
-
+  plugins: [deskTool()],
   schema: {
     types: schemaTypes,
   },
