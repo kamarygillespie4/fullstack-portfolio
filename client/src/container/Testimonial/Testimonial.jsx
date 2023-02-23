@@ -3,7 +3,7 @@ import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
+import { client } from "../../client";
 import "./Testimonial.scss";
 
 const Testimonial = () => {
@@ -33,10 +33,10 @@ const Testimonial = () => {
       {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
-            <img
+            {/* <img
               src={urlFor(testimonials[currentIndex].imgurl)}
               alt={testimonials[currentIndex].name}
-            />
+            /> */}
             <div className="app__testimonial-content">
               <p className="p-text">{testimonials[currentIndex].feedback}</p>
               <div>
@@ -83,7 +83,7 @@ const Testimonial = () => {
             transition={{ duration: 0.5, type: "tween" }}
             key={brand._id}
           >
-            <img src={urlFor(brand.imgUrl)} alt={brand.name} />
+            {/* <img src={urlFor(brand.imgUrl)} alt={brand.name} /> */}
           </motion.div>
         ))}
       </div>

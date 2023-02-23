@@ -4,6 +4,6 @@ import blockContent from './blockContent'
 import contact from './contact'
 import category from './category'
 import skills from './skills'
-import projects from './projects'
+import works from './works'
 
-export const schemaTypes = [testimonials, abouts, blockContent, contact, category, skills, projects]
+export const schemaTypes = [testimonials, abouts, blockContent, contact, category, skills, works]
