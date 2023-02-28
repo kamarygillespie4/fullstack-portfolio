@@ -6,39 +6,39 @@ import { client } from "../../client";
 import "./Footer.scss";
 
 const Footer = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+  // const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  const { username, email, message } = formData;
+  // const { username, email, message } = formData;
 
-  const handleChangeInput = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  // const handleChangeInput = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({ ...formData, [name]: value });
+  // };
 
-  const handleSubmit = () => {
-    setLoading(true);
+  // const handleSubmit = () => {
+  //   setLoading(true);
 
-    const contact = {
-      _type: "contact",
-      name: formData.username,
-      email: formData.email,
-      message: formData.message,
-    };
+  //   const contact = {
+  //     _type: "contact",
+  //     name: formData.username,
+  //     email: formData.email,
+  //     message: formData.message,
+  //   };
 
-    client
-      .create(contact)
-      .then(() => {
-        setLoading(false);
-        setIsFormSubmitted(true);
-      })
-      .catch((err) => console.log(err));
-  };
+  //   client
+  //     .create(contact)
+  //     .then(() => {
+  //       setLoading(false);
+  //       setIsFormSubmitted(true);
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
 
   return (
     <>
@@ -60,8 +60,39 @@ const Footer = () => {
             +1 (720) 415-8887
           </a>
         </div>
+        {/* ------ */}
+        <div className="app__footer-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="phone"
+          />
+          <a
+            href="https://github.com/kamarygillespie4"
+            className="p-text"
+            target="_blank"
+            rel="noreferrer"
+          >
+            /kamarygillespie4
+          </a>
+        </div>
+        {/* ------ */}
+        <div className="app__footer-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="phone"
+          />
+          <a
+            href="https://www.linkedin.com/in/kamary-gillespie/"
+            className="p-text"
+            target="_blank"
+            rel="noreferrer"
+          >
+            /kamary-gillespie
+          </a>
+        </div>
+        {/* -------- */}
       </div>
-      {!isFormSubmitted ? (
+      {/* {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input
@@ -100,7 +131,7 @@ const Footer = () => {
         <div>
           <h3 className="head-text">Thank you for getting in touch!</h3>
         </div>
-      )}
+      )} */}
     </>
   );
 };

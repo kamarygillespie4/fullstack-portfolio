@@ -31,13 +31,21 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">
-        I Know that <span>Good Design</span> <br />
-        means <span>Good Business</span>
-      </h2>
+      <p className="head-text">
+        Hi, I'm Kamary Gillespie. I am a <br />
+        <span>
+          fullstack web developer on a mission to enhance and diversify my
+          skillset.
+        </span>
+        <br />
+        If I'm not coding, you can find me <br />
+        cuddling with my dog, <br />
+        going out on the boat, or <br />
+        watching movies with my friends and family.
+      </p>
 
       <div className="app__profiles">
-        {abouts.map((about, index) => (
+        {/* {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
@@ -53,7 +61,7 @@ const About = () => {
               {about.description}
             </p>
           </motion.div>
-        ))}
+        ))} */}
       </div>
     </>
   );

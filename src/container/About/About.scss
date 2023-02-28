@@ -26,6 +26,20 @@
     border-radius: 15px;
     object-fit: cover;
   }
+  button{
+    width: 170px;
+    background:var(--lightGray-color);
+    margin:3%;
+    object-fit: cover;
+    padding:8%;
+    border: none;
+    
+    border-radius:10px;
+    &:hover{
+      border: 1px solid var(--secondary-color);
+    }
+  
+  }
 
   @media screen and (min-width: 2000px) {
     width: 370px;

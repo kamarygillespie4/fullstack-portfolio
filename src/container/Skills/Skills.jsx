@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Tooltip } from "react-tooltip";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { client } from "../../client";
+import { client, urlFor } from "../../client";
 import "./Skills.scss";
 
 const Skills = () => {
@@ -25,7 +25,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">Skills & Certifications</h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -40,7 +40,7 @@ const Skills = () => {
                 className="app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
-                {/* <img src={urlFor(skill.icon)} alt={skill.name} /> */}
+                <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>

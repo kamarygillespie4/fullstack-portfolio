@@ -40,7 +40,8 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        Welcom to my <span>Development Portfolio</span> :)
+        I Know that <span>Good Design</span> <br />
+        means <span>Good Business</span>
       </h2>
 
       <div className="app__profiles">

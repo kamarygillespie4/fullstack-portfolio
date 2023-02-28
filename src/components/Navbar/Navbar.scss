@@ -19,6 +19,12 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  p{
+    font-family: Architects Daughter;
+    font-size: x-large;
+    font-weight: bolder;
+    color: var(--black-color)
+  }
 
   img {
     width: 90px;
