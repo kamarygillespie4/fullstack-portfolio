@@ -40,7 +40,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        Welcom to my <span>Development Portfolio</span> :)
+        Welcome to my <span>Development Portfolio</span> :)
       </h2>
 
       <div className="app__profiles">
@@ -69,7 +69,7 @@ const Work = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button>Check out the Code!</button>
+              <button>Check Out the Code!</button>
             </a>
             <a
               key={work.projectLink}
@@ -77,7 +77,7 @@ const Work = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button>View the deployed project!</button>
+              <button>View the Deployed Project!</button>
             </a>
           </motion.div>
         ))}

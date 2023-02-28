@@ -82,11 +82,14 @@
 }
 
 .app__skills-exp {
-  flex: 1;
+  flex: 2;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+
+
+
 
   @media screen and (max-width: 900px) {
     margin-top: 2rem;
@@ -128,9 +131,28 @@
 .app__skills-exp-year {
   margin-right: 3rem;
 
-  p {
-    font-weight: 800;
+
+  
+  
+  h2 {
+   
     color: var(--secondary-color);
+  }
+  h3{
+
+    color: var(--brown-color);
+    margin:2%
+  }
+  h4{
+    margin:2%;
+    color: var(--brown-color);
+  }
+  section{
+    p{
+      font-size: small;
+      color: var(--black-color);
+      margin:2%
+    }
   }
 
   @media screen and (max-width: 450px) {

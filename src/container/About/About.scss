@@ -15,8 +15,8 @@
 .app__profile-item {
   width: 190px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: 2rem;
 
@@ -27,12 +27,13 @@
     object-fit: cover;
   }
   button{
-    width: 170px;
+    width: 190px;
     background:var(--lightGray-color);
     margin:3%;
     object-fit: cover;
     padding:8%;
     border: none;
+    color:var(--black-color);
     
     border-radius:10px;
     &:hover{
