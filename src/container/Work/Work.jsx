@@ -50,12 +50,32 @@ const Work = () => {
             key={work.title}
           >
             <img src={urlFor(work.mainImage)} alt={work.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
+            <h2
+              key={work.title}
+              className="bold-text"
+              style={{ marginTop: 20 }}
+            >
               {work.title}
             </h2>
             <p className="p-text" style={{ marginTop: 10 }}>
-              {work.description}
+              {work.body}
             </p>
+            <p className="p-text" style={{ marginTop: 10 }}>
+              {work.projectLink}
+            </p>
+            <p className="p-text" style={{ marginTop: 10 }}>
+              {work.codeLink}
+            </p>
+
+            <p className="p-text" style={{ marginTop: 10 }}>
+              {work.categories}
+            </p>
+            <p className="p-text" style={{ marginTop: 10 }}>
+              {work.publishedAt}
+            </p>
+            <a key={work.codeLink} href={work.codeLink} target="_blank">
+              <button>{work.codeLink}</button>
+            </a>
           </motion.div>
         ))}
       </div>
