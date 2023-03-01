@@ -10,6 +10,8 @@
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 2rem;
+  
+  
 }
 
 .app__profile-item {
@@ -26,12 +28,13 @@
     border-radius: 15px;
     object-fit: cover;
   }
+  
   button{
     width: 190px;
     background:var(--lightGray-color);
     margin:3%;
     object-fit: cover;
-    padding:8%;
+    padding:5%;
     border: none;
     color:var(--black-color);
     
@@ -40,6 +43,7 @@
       border: 1px solid var(--secondary-color);
     }
   
+ 
   }
 
   @media screen and (min-width: 2000px) {
