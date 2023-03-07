@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-//import { AiFillEye, AiFillGithub } from "react-icons/ai";
+
 import { motion } from "framer-motion";
-//import { Link } from "react-router-dom";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client, urlFor } from "../../client";
@@ -9,7 +8,6 @@ import "./Work.scss";
 
 const Work = () => {
   const [works, setWorks] = useState([]);
-  //const [filterWork, setFilterWork] = useState([]);
 
   useEffect(() => {
     client
@@ -91,30 +89,3 @@ export default AppWrap(
   "work",
   "app__primarybg"
 );
-
-// <h2 className="head-text">
-//   My Creative <span>Portfolio</span> Section
-// </h2>
-// <section className="px-5 2xl:max-w-7xl 2xl:mx-auto">
-//   <h1 className="font-bold text-4xl mt-5 mb-10 tracking-widest text-center md:text-6xl lg:text-7xl">
-//     Blog
-//   </h1>
-
-//   <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 ">
-//     {works.map((work) => (
-//       <article key={work.slug.current}>
-//         <img src={work.mainImage.asset.url} alt={work.title} />
-//         <h4 className="text-xl mt-2">{work.title}</h4>
-
-//         {/* <button className="mt-5 mb-10">
-//           <Link
-//             to={`/blog/${work.slug.current}`}
-//             className="py-2 px-6 rounded shadow text-white bg-black hover:bg-transparent border-2 border-black transition-all duration-500 hover:text-black font-bold"
-//           >
-//             Read Full Article
-//           </Link>
-//         </button> */}
-//       </article>
-//     ))}
-//   </div>
-// </section>

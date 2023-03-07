@@ -1,9 +1,7 @@
 import React from "react";
-//import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./About.scss";
-//import { client } from "../../client";
 
 const About = () => {
   return (

@@ -60,19 +60,6 @@ const Skills = () => {
                   <p className="bold-text">{certification.description}</p>
                 </section>
               </div>
-              {/* <motion.div className="app__skills-exp-works">
-                <>
-                  <motion.div
-                    whileInView={{ opacity: [0, 1] }}
-                    transition={{ duration: 0.5 }}
-                    className="app__skills-exp-work"
-                    key={certification.name}
-                  >
-                    <h4 className="bold-text">{certification.title}</h4>
-                    <p className="p-text">{certification.datetime}</p>
-                  </motion.div>
-                </>
-              </motion.div> */}
             </motion.div>
           ))}
         </div>
